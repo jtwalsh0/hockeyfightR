@@ -1,0 +1,21 @@
+Package: hockeyfightR
+Title: Rank hockey fighters
+Version: 0.0.0.9000
+Authors@R: as.person(c(
+    "Joe Walsh <j.thomas.walsh@gmail.com> [aut, cre]"
+  ))
+Description: Using data from hockeyfights.com, this R package does two things:
+    1) it estimates the quality of each fighter and 2) it predicts who would win a
+    fight. It uses information about each fighter, such as who the fighter is, how
+    old he is when the fight takes place, and whether he was the home fighter.
+Depends:
+    R (>= 3.3.1)
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports:
+    RPostgreSQL (>= 0.4.0)
+Suggests:
+    shiny (>= 0.14.2),
+    ggplot2 (>= 2.1.0)
+RoxygenNote: 5.0.1
