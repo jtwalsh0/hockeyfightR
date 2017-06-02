@@ -25,5 +25,10 @@ def get_db_from_profile(config_name='db_profile.yaml'):
             'PGPORT' in creds.keys()):
         raise Exception('Bad config file:' + config_name)
 
-    engine = create_engine('postgresql://', connect_args=creds)
+    engine = get_engine(creds['PGDATABASE'], creds['PGUSER'], creds['PGHOST'], creds['PGPORT'], creds['PGPASSWORD'])    
+    return engine
+
+def get_engine(db, user, host, port, passwd):
+    url = 'postgresql://{user}:{passwd}@{host}:{port}/{db}'.format(user=user, passwd=passwd, host=host, port=port, db=db)
+    engine = create_engine(url)
     return engine
