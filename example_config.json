@@ -1,0 +1,7 @@
+{
+  "files": {
+    "credentials": "credentials.json",
+    "fights_data": "data/fights_data.csv",
+    "fighters_data": "data/fighters_data.csv"
+  }
+}

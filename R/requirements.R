@@ -1,0 +1,5 @@
+install.packages('RPostgreSQL')
+install.packages('tidyverse')
+install.packages('aws.s3')
+install.packages('rstan')
+install.packages('rjson')

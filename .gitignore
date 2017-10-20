@@ -1,3 +1,6 @@
 .Rproj.user
 .Rhistory
 .RData
+credentials.json
+config.json
+data/
